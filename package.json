@@ -11,20 +11,46 @@
     "url": "git+https://github.com/yunzhencc/starter-ts.git"
   },
   "bugs": "https://github.com/yunzhencc/starter-ts/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.mts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsx src/index.ts",
+    "test": "vitest",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "lint:package": "publint",
+    "typecheck": "tsc",
+    "prepare": "simple-git-hooks",
+    "preinstall": "npx only-allow pnpm"
   },
-  "keywords": [],
   "devDependencies": {
-    "@antfu/eslint-config": "^9.0.0"
-  },
-  "dependencies": {
+    "@antfu/eslint-config": "catalog:cli",
+    "@commitlint/cli": "catalog:cli",
+    "@commitlint/config-conventional": "catalog:cli",
+    "@commitlint/types": "catalog:cli",
     "eslint": "catalog:cli",
+    "lint-staged": "catalog:cli",
+    "publint": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
     "tsx": "catalog:cli",
     "vitest": "catalog:test"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "npx --no -- commitlint --edit $1",
+    "pre-commit": "npx lint-staged",
+    "preserveUnused": [
+      "commit-msg"
+    ]
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }

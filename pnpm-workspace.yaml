@@ -1,11 +1,24 @@
+catalogMode: prefer
 ignoreWorkspaceRootCheck: true
-allowBuilds:
-  esbuild: true
-  simple-git-hooks: true
+shellEmulator: true
+trustPolicy: no-downgrade
+
+trustPolicyExclude:
+  - tinyexec@1.2.2
+
 catalogs:
   cli:
+    '@antfu/eslint-config': ^9.0.0
+    '@commitlint/cli': ^21.0.1
+    '@commitlint/config-conventional': ^21.0.1
+    '@commitlint/types': ^21.0.1
     eslint: ^10.4.0
+    lint-staged: ^17.0.5
+    publint: ^0.3.21
     simple-git-hooks: ^2.13.1
     tsx: ^4.22.3
   test:
     vitest: ^4.1.7
+allowBuilds:
+  esbuild: true
+  simple-git-hooks: true
