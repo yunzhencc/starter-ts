@@ -30,9 +30,12 @@
     "lint:fix": "eslint --fix",
     "lint:package": "publint",
     "typecheck": "tsc",
-    "update-snapshot": "tsdown --update-snapshot",
+    "update-snapshot": "tsnapi -u",
     "prepare": "simple-git-hooks",
     "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "es-toolkit": "catalog:core"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",

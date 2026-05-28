@@ -45,6 +45,10 @@ catalogs:
     unrun:
       specifier: ^0.3.0
       version: 0.3.0
+  core:
+    es-toolkit:
+      specifier: ^1.47.0
+      version: 1.47.0
   test:
     vitest:
       specifier: ^4.1.7
@@ -53,6 +57,10 @@ catalogs:
 importers:
 
   .:
+    dependencies:
+      es-toolkit:
+        specifier: catalog:core
+        version: 1.47.0
     devDependencies:
       '@antfu/eslint-config':
         specifier: catalog:cli

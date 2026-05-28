@@ -21,6 +21,8 @@ catalogs:
     tsnapi: ^0.3.3
     tsx: ^4.22.3
     unrun: ^0.3.0
+  core:
+    es-toolkit: ^1.47.0
   test:
     vitest: ^4.1.7
 allowBuilds:
