@@ -30,7 +30,7 @@
     "lint:fix": "eslint --fix",
     "lint:package": "publint",
     "typecheck": "tsc",
-    "update-snapshot": "tsnapi -u -o test/__snapshots__/tsnapi/pkg-name",
+    "snapshot:remove": "rimraf test/__snapshots__/tsnapi",
     "prepare": "simple-git-hooks",
     "preinstall": "npx only-allow pnpm"
   },
@@ -45,6 +45,7 @@
     "eslint": "catalog:cli",
     "lint-staged": "catalog:cli",
     "publint": "catalog:cli",
+    "rimraf": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
     "tsdown": "catalog:cli",
     "tsdown-stale-guard": "catalog:cli",
