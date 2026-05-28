@@ -5,3 +5,7 @@
 export declare const one: number;
 export declare const two: number;
 // #endregion
+
+// #region Other
+export { throttle }
+// #endregion

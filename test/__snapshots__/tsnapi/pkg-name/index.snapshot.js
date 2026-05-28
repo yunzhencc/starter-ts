@@ -5,3 +5,7 @@
 export var one /* const */
 export var two /* const */
 // #endregion
+
+// #region Other
+export { throttle }
+// #endregion

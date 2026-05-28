@@ -30,7 +30,7 @@
     "lint:fix": "eslint --fix",
     "lint:package": "publint",
     "typecheck": "tsc",
-    "update-snapshot": "tsnapi -u",
+    "update-snapshot": "tsnapi -u -o test/__snapshots__/tsnapi/pkg-name",
     "prepare": "simple-git-hooks",
     "preinstall": "npx only-allow pnpm"
   },
