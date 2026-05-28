@@ -1,0 +1,11 @@
+ignoreWorkspaceRootCheck: true
+allowBuilds:
+  esbuild: true
+  simple-git-hooks: true
+catalogs:
+  cli:
+    eslint: ^10.4.0
+    simple-git-hooks: ^2.13.1
+    tsx: ^4.22.3
+  test:
+    vitest: ^4.1.7

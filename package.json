@@ -1,0 +1,30 @@
+{
+  "name": "pkg-name",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@11.1.3",
+  "description": "_description_",
+  "author": "wangxingkang <wang_xingkang@qq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunzhencc/starter-ts.git"
+  },
+  "bugs": "https://github.com/yunzhencc/starter-ts/issues",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@antfu/eslint-config": "^9.0.0"
+  },
+  "dependencies": {
+    "eslint": "catalog:cli",
+    "simple-git-hooks": "catalog:cli",
+    "tsx": "catalog:cli",
+    "vitest": "catalog:test"
+  }
+}
