@@ -22,12 +22,15 @@
     "dist"
   ],
   "scripts": {
+    "dev": "tsdown --watch",
     "start": "tsx src/index.ts",
+    "build": "tsdown",
     "test": "vitest",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "lint:package": "publint",
     "typecheck": "tsc",
+    "update-snapshot": "tsdown --update-snapshot",
     "prepare": "simple-git-hooks",
     "preinstall": "npx only-allow pnpm"
   },
@@ -40,7 +43,11 @@
     "lint-staged": "catalog:cli",
     "publint": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
+    "tsdown": "catalog:cli",
+    "tsdown-stale-guard": "catalog:cli",
+    "tsnapi": "catalog:cli",
     "tsx": "catalog:cli",
+    "unrun": "catalog:cli",
     "vitest": "catalog:test"
   },
   "simple-git-hooks": {

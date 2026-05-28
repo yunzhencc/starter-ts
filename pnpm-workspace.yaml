@@ -16,7 +16,11 @@ catalogs:
     lint-staged: ^17.0.5
     publint: ^0.3.21
     simple-git-hooks: ^2.13.1
+    tsdown: ^0.22.0
+    tsdown-stale-guard: ^0.1.2
+    tsnapi: ^0.3.3
     tsx: ^4.22.3
+    unrun: ^0.3.0
   test:
     vitest: ^4.1.7
 allowBuilds:
