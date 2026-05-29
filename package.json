@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",
+    "@changesets/cli": "catalog:cli",
     "@commitlint/cli": "catalog:cli",
     "@commitlint/config-conventional": "catalog:cli",
     "@commitlint/types": "catalog:cli",
