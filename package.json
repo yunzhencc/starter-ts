@@ -45,8 +45,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",
     "@antfu/ni": "catalog:cli",
-    "@changesets/changelog-github": "catalog:cli",
-    "@changesets/cli": "catalog:cli",
     "@commitlint/cli": "catalog:cli",
     "@commitlint/config-conventional": "catalog:cli",
     "@commitlint/types": "catalog:cli",

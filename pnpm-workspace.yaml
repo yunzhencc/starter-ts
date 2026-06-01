@@ -10,8 +10,6 @@ catalogs:
   cli:
     '@antfu/eslint-config': ^9.0.0
     '@antfu/ni': ^30.1.0
-    '@changesets/changelog-github': ^0.5.1
-    '@changesets/cli': ^2.31.0
     '@commitlint/cli': ^21.0.1
     '@commitlint/config-conventional': ^21.0.1
     '@commitlint/types': ^21.0.1
