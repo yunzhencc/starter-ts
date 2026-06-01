@@ -33,6 +33,7 @@
     "snapshot:remove": "rimraf test/__snapshots__/tsnapi",
     "prepare": "simple-git-hooks",
     "preinstall": "npx only-allow pnpm",
+    "prepublishOnly": "nr build",
     "release": "bumpp"
   },
   "publishConfig": {
