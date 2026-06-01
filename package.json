@@ -33,9 +33,7 @@
     "snapshot:remove": "rimraf test/__snapshots__/tsnapi",
     "prepare": "simple-git-hooks",
     "preinstall": "npx only-allow pnpm",
-    "changeset": "changeset",
-    "version": "changeset version",
-    "release": "pnpm run build && changeset publish"
+    "release": "bumpp"
   },
   "publishConfig": {
     "access": "public"
@@ -52,6 +50,7 @@
     "@commitlint/config-conventional": "catalog:cli",
     "@commitlint/types": "catalog:cli",
     "@types/node": "catalog:types",
+    "bumpp": "catalog:cli",
     "eslint": "catalog:cli",
     "lint-staged": "catalog:cli",
     "publint": "catalog:cli",
