@@ -45,12 +45,6 @@ catalogs:
     tsdown:
       specifier: ^0.22.0
       version: 0.22.0
-    tsdown-stale-guard:
-      specifier: ^0.1.2
-      version: 0.1.2
-    tsnapi:
-      specifier: ^0.3.3
-      version: 0.3.3
     tsx:
       specifier: ^4.22.3
       version: 4.22.3
@@ -62,9 +56,19 @@ catalogs:
       specifier: ^1.47.0
       version: 1.47.0
   test:
+    tsdown-stale-guard:
+      specifier: ^0.1.2
+      version: 0.1.2
+    tsnapi:
+      specifier: ^0.3.3
+      version: 0.3.3
     vitest:
       specifier: ^4.1.7
       version: 4.1.7
+  types:
+    '@types/node':
+      specifier: ^25.9.1
+      version: 25.9.1
 
 importers:
 
@@ -95,6 +99,9 @@ importers:
       '@commitlint/types':
         specifier: catalog:cli
         version: 21.0.1
+      '@types/node':
+        specifier: catalog:types
+        version: 25.9.1
       eslint:
         specifier: catalog:cli
         version: 10.4.0(jiti@2.6.1)
@@ -114,10 +121,10 @@ importers:
         specifier: catalog:cli
         version: 0.22.0(publint@0.3.21)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.3.0(synckit@0.11.12))
       tsdown-stale-guard:
-        specifier: catalog:cli
+        specifier: catalog:test
         version: 0.1.2(tsdown@0.22.0(publint@0.3.21)(tsx@4.22.3)(typescript@6.0.3)(unrun@0.3.0(synckit@0.11.12)))
       tsnapi:
-        specifier: catalog:cli
+        specifier: catalog:test
         version: 0.3.3(vitest@4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.6.1)(tsx@4.22.3)(yaml@2.9.0)))
       tsx:
         specifier: catalog:cli

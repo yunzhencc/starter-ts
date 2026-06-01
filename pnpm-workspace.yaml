@@ -21,14 +21,16 @@ catalogs:
     rimraf: ^6.1.3
     simple-git-hooks: ^2.13.1
     tsdown: ^0.22.0
-    tsdown-stale-guard: ^0.1.2
-    tsnapi: ^0.3.3
     tsx: ^4.22.3
     unrun: ^0.3.0
   core:
     es-toolkit: ^1.47.0
   test:
+    tsdown-stale-guard: ^0.1.2
+    tsnapi: ^0.3.3
     vitest: ^4.1.7
+  types:
+    '@types/node': ^25.9.1
 allowBuilds:
   esbuild: true
   simple-git-hooks: true
