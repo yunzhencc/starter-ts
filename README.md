@@ -1,4 +1,4 @@
-# @yunzhencc/starter-ts
+# starter-ts
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -26,19 +26,6 @@
 git clone https://github.com/yunzhencc/starter-ts.git my-lib
 cd my-lib
 # 记得全局替换包名、作者和描述信息
-```
-
-## 安装
-
-```sh
-# npm
-npm install @yunzhen/starter-ts
-
-# yarn
-yarn add @yunzhen/starter-ts
-
-# pnpm
-pnpm add @yunzhen/starter-ts
 ```
 
 ## 💻 本地开发
